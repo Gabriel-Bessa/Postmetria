@@ -19,11 +19,11 @@ CREATE TABLE IF NOT EXISTS tb_article
 (
     id         int auto_increment,
     constraint table_name_pk primary key (id),
-    author varchar(255) not null,
+    author varchar(255) null,
     title varchar(255) not null,
     description text not null,
     url varchar(255) not null,
-    urlToImage varchar(255) not null,
+    urlToImage varchar(1000) null,
     publishedAt datetime not null null,
     content text not null,
     source_id int null,
