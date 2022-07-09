@@ -21,3 +21,7 @@ Segue abaixo os scripts para a criação do container:
 - Foi injetado tbm a execução do script de banco na conexão com o banco de dados, desta forma a execução do script agendada se mantem estável até mesmo em cenário de catástrofe e alteração de base de dados.
 - Pode ser que durante a execução do script haja o problema ![Problema](img.png) neste caso é devido controle do lado da API da quantidade e fluxo de cache e user-agent da request. Para soluciona-lo basta simplismente clickar na url de chamada e ou abrir a chamada REST no navegador, para que seja resolvido![img_1.png](img_1.png)  
 - Execução: `{path do PHP 7+} ${path do projeto}/dump-script.php` em meu caso foi `/bin/php /home/gabriel/postmetria/dump-script.php`;
+
+### Aplicação
+Foram criadas basicamente 2 entidade a "ArticleSource", o fornecedor do artigo, e a "Article", o artigo por sí só. Deste modo,
+a aplicação consiste de 2 Path's básicos a /api/article e a /api/article-source como descrito no start do projeto
